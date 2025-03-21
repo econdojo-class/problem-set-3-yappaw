@@ -1,0 +1,54 @@
+%------------%
+%  Preamble  %
+%------------%
+
+\documentclass[final,11pt]{article}
+\usepackage[paperwidth=9.0in, top=1.2in, bottom=1.2in, left=1.2in, right=1.2in]{geometry}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{mathpazo}
+\usepackage{threeparttable}
+\usepackage{eurosym}
+\usepackage[colorlinks, linkcolor=blue, anchorcolor=blue, citecolor=blue]{hyperref}
+
+\renewcommand{\headrulewidth}{0pt}
+\setlength{\arraycolsep}{10pt}
+\setlength\headheight{0.5cm}
+\setlength\headsep{0.8cm}
+\setlength\footskip{1.0cm}
+\setlength{\parindent}{0em}
+\pagestyle{fancy}
+\chead{\textcolor[rgb]{0.5,0.5,0.5}{\sc Spring 2025: ECON 6100}}
+
+%------------%
+%  Document  %
+%------------%
+
+\begin{document}
+\thispagestyle{empty}
+\begin{spacing}{1.25}
+
+\textbf{Your Name:\hfill Problem Set 3, Due: Apr. 20, 2025}\\
+
+(1) Download the stock return data from Yahoo Finance for SMCI and Russell 2000. Estimate the following linear regression
+\begin{gather}
+    R_{\text{SMCI}}=\alpha+\beta R_{\text{IWM}}+u
+\end{gather}
+where $u$ follows Student-$t$ distribution. Compare the marginal likelihoods for different degrees of freedom. Explain your estimation results.
+
+\newpage
+
+(2) Download the monthly inflation and unemployment data from FRED for the period 1960--1982. Estimate the following linear regression
+\begin{gather}
+    \Delta\pi_t=\beta_0+\beta_1 u_t+\epsilon_t
+\end{gather}
+where $\epsilon_t$ follows an AR$(1)$ process. Explain your estimation results.
+
+\end{spacing}
+\end{document}
